@@ -48,8 +48,8 @@ window.addEventListener('scroll', () => {
   if (window.scrollY > 30) {
 
     navWrapper.classList.add(
-      'bg-white/20',
-      'dark:bg-zinc-900/30',
+      'bg-white/10',
+      'dark:bg-zinc-900/10',
       'backdrop-blur-xl',
       'border',
       'border-white/20',
@@ -59,11 +59,11 @@ window.addEventListener('scroll', () => {
   } else {
 
     navWrapper.classList.remove(
-      'bg-white/20',
-      'dark:bg-zinc-900/30',
-      'backdrop-blur 1xl',
+      'bg-white/10',
+      'dark:bg-zinc-900/10',
+      'backdrop-blur-xl',
       'border',
-      'border-white/10',
+      'border-white/20',
       'shadow-xl',
       'shadow-[0_8px_32px_rgba(0,0,0,0.12)]'
     );
