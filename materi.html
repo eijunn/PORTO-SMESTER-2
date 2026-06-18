@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diniyyah Portfolio</title>
+    <script>
+        const savedTheme = localStorage.getItem('theme');
+
+        if (savedTheme === 'dark') {
+            document.documentElement.classList.add('dark');
+        } else if (savedTheme === 'light') {
+            document.documentElement.classList.remove('dark');
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+
+    <script>
+        window.tailwind = {
+            config: {
+                darkMode: 'class'
+            }
+        }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .glow-mode {
+            transition: filter .2s ease, box-shadow .2s ease;
+            filter: drop-shadow(0 0 25px rgba(99, 102, 241, 0.35));
+        }
+
+        .glow-mode .rounded-xl {
+            box-shadow: 0 0 28px rgba(99, 102, 241, 0.14);
+        }
+
+        .glow-mode .shadow-lg {
+            box-shadow: 0 0 40px rgba(99, 102, 241, 0.18), var(--tw-shadow);
+        }
+    </style>
+
+</head>
+
+<body class="bg-white dark:bg-black text-zinc-900 dark:text-zinc-100 min-h-screen transition-colors duration-300">
+
+    <a href="index.html"
+        class="fixed top-6 left-6 z-50 w-12 h-12 flex items-center justify-center rounded-xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-md hover:scale-105 active:scale-95 transition text-xl">
+        ←
+    </a>
+
+    <div class="fixed top-6 right-6 z-50 flex gap-2">
+        <button id="theme-toggle"
+            class="w-12 h-12 flex items-center justify-center rounded-xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-md hover:scale-105 active:scale-95 transition text-xl">
+            🌙
+        </button>
+        <button id="glow-toggle"
+            class="w-12 h-12 flex items-center justify-center rounded-xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-md hover:scale-105 active:scale-95 transition text-xl">
+            ✨
+        </button>
+    </div>
+
+    <section class="py-20 px-6">
+
+        <div class="max-w-4xl mx-auto">
+
+            <div class="text-center mb-12">
+
+                <h1 class="text-5xl font-black mb-4 text-zinc-900 dark:text-white">
+                    DINIYYAH PORTFOLIO
+                </h1>
+
+                <p class="text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto">
+                    Collection of books, syarah, and tasmi' videos that have been
+                    studied during one semester.
+                </p>
+
+            </div>
+
+
+
+            <div class="rounded-3xl border border-zinc-200/50 dark:border-zinc-800
+                       bg-zinc-50/80 dark:bg-zinc-950/50
+                       backdrop-blur-xl
+                       shadow-[0_8px_40px_rgba(0,0,0,0.04)]
+                       overflow-hidden mt-8 ">
+                <div class="p-8">
+
+                    <h2 class="text-2xl font-bold mb-6 text-zinc-900 dark:text-white flex items-center gap-3">
+                        📚 Syarah
+                    </h2>
+
+                    <div class="space-y-3">
+
+                        <a href="https://docs.google.com/document/d/19PcggxD4gQKE9BMquwfYCmI03ayqTM1s26d3Sl85AG8/edit?usp=sharing"
+                            class="group flex justify-between items-center rounded-xl px-5 py-4 bg-white dark:bg-zinc-900/60 border border-zinc-100 dark:border-zinc-800/80 hover:bg-indigo-500/10 dark:hover:bg-indigo-500/10 transition-all duration-300">
+                            <span class="font-medium text-zinc-800 dark:text-zinc-200">Aqidatuna</span>
+                            <span class="text-indigo-400 group-hover:translate-x-1 transition">↗</span>
+                        </a>
+
+                        <a href="https://docs.google.com/document/d/1CrqMnxerJwOzZV1IVVBWrKN0HhYGKESY_e0_z4ml5HQ/edit?usp=sharing"
+                            class="group flex justify-between items-center rounded-xl px-5 py-4 bg-white dark:bg-zinc-900/60 border border-zinc-100 dark:border-zinc-800/80 hover:bg-indigo-500/10 dark:hover:bg-indigo-500/10 transition-all duration-300">
+                            <span class="font-medium text-zinc-800 dark:text-zinc-200">Fathul Ali</span>
+                            <span class="text-indigo-400 group-hover:translate-x-1 transition">↗</span>
+                        </a>
+
+                        <a href="https://docs.google.com/document/d/1lMy60lXBy5hUEYKFupk3ED5urh02bNRyGmDbVddVMTk/edit?usp=sharing"
+                            class="group flex justify-between items-center rounded-xl px-5 py-4 bg-white dark:bg-zinc-900/60 border border-zinc-100 dark:border-zinc-800/80 hover:bg-indigo-500/10 dark:hover:bg-indigo-500/10 transition-all duration-300">
+                            <span class="font-medium text-zinc-800 dark:text-zinc-200">Nabiyyuna</span>
+                            <span class="text-indigo-400 group-hover:translate-x-1 transition">↗</span>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="rounded-3xl border border-zinc-200/50 dark:border-zinc-800
+                       bg-zinc-50/80 dark:bg-zinc-950/50
+                       backdrop-blur-xl
+                       shadow-[0_8px_40px_rgba(0,0,0,0.04)]
+                       overflow-hidden mt-8">
+
+                <div class="p-8">
+
+
+                    <h2 class="text-2xl font-bold mb-6 text-zinc-900 dark:text-white flex items-center gap-3">
+                        🎥 Video Tasmi'
+                    </h2>
+                    <h3 class="text-2xl font-bold mb-6 text-zinc-900 dark:text-white flex items-center gap-3">
+                        Aqidatuna
+                    </h3>
+
+                    <a href="https://drive.google.com/file/d/1QFUjytcvQSSdr0PgXlOBC7F94nFyiFge/view?usp=drive_link"
+                        class="group flex justify-between items-center rounded-xl px-5 py-4
+                                   bg-white dark:bg-zinc-900/60 border border-zinc-100 dark:border-zinc-800/80
+                                   hover:bg-indigo-500/10 dark:hover:bg-indigo-500/10 transition-all duration-300">
+
+                        <span class="font-medium text-zinc-800 dark:text-zinc-200">
+                            aqidatuna M1
+                        </span>
+
+                        <span class="text-indigo-400 group-hover:translate-x-1 transition">
+                            ↗
+                        </span>
+
+                    </a>
+                    <a href="https://drive.google.com/file/d/1KHgUa9Lp1LylLbgDCh0PBx38hYbsR1Ka/view?usp=drive_link"
+                        class="group flex justify-between items-center rounded-xl px-5 py-4
+                                   bg-white dark:bg-zinc-900/60 border border-zinc-100 dark:border-zinc-800/80
+                                   hover:bg-indigo-500/10 dark:hover:bg-indigo-500/10 transition-all duration-300">
+
+                        <span class="font-medium text-zinc-800 dark:text-zinc-200">
+                            aqidatuna M2
+                        </span>
+
+                        <span class="text-indigo-400 group-hover:translate-x-1 transition">
+                            ↗
+                        </span>
+
+                    </a>
+                    <a href="https://drive.google.com/file/d/1ilr2_7Zri9NgZxWpxbE1jHDgik2QLOJn/view?usp=drive_link"
+                        class="group flex justify-between items-center rounded-xl px-5 py-4
+                                   bg-white dark:bg-zinc-900/60 border border-zinc-100 dark:border-zinc-800/80
+                                   hover:bg-indigo-500/10 dark:hover:bg-indigo-500/10 transition-all duration-300">
+
+                        <span class="font-medium text-zinc-800 dark:text-zinc-200">
+                            aqidatuna M3
+                        </span>
+
+                        <span class="text-indigo-400 group-hover:translate-x-1 transition">
+                            ↗
+                        </span>
+
+                    </a>
+                    <h3 class="text-2xl font-bold mb-6 mt-5 text-zinc-900 dark:text-white flex items-center gap-3">
+                        Fathul Ali
+                    </h3>
+
+
+                    <a href="https://drive.google.com/file/d/11zDvfA5jv-lWBgUzNwtMoHyvOkOXn9q9/view?usp=drive_link"
+                        class="group flex justify-between items-center rounded-xl px-5 py-4
+                                   bg-white dark:bg-zinc-900/60 border border-zinc-100 dark:border-zinc-800/80
+                                   hover:bg-indigo-500/10 dark:hover:bg-indigo-500/10 transition-all duration-300">
+
+                        <span class="font-medium text-zinc-800 dark:text-zinc-200">
+                            Fathul Ali M1
+                        </span>
+
+                        <span class="text-indigo-400 group-hover:translate-x-1 transition">
+                            ↗
+                        </span>
+
+                    </a>
+                    <a href="https://drive.google.com/file/d/1RieKzC3tGegAcjLAy0N7mm4NprPZ7Bza/view?usp=drive_link"
+                        class="group flex justify-between items-center rounded-xl px-5 py-4
+                                   bg-white dark:bg-zinc-900/60 border border-zinc-100 dark:border-zinc-800/80
+                                   hover:bg-indigo-500/10 dark:hover:bg-indigo-500/10 transition-all duration-300">
+
+                        <span class="font-medium text-zinc-800 dark:text-zinc-200">
+                            Fathul Ali M2
+                        </span>
+
+                        <span class="text-indigo-400 group-hover:translate-x-1 transition">
+                            ↗
+                        </span>
+
+                    </a>
+                    <a href="https://drive.google.com/file/d/1-MOUJwMIwHL-SolFRk76GLEDUVFPZE3x/view?usp=drive_link  "
+                        class="group flex justify-between items-center rounded-xl px-5 py-4
+                                   bg-white dark:bg-zinc-900/60 border border-zinc-100 dark:border-zinc-800/80
+                                   hover:bg-indigo-500/10 dark:hover:bg-indigo-500/10 transition-all duration-300">
+
+                        <span class="font-medium text-zinc-800 dark:text-zinc-200">
+                            Fathul Ali M3
+                        </span>
+
+                        <span class="text-indigo-400 group-hover:translate-x-1 transition">
+                            ↗
+                        </span>
+
+                    </a>
+
+
+                    <h3 class="text-2xl font-bold mb-6 mt-5 text-zinc-900 dark:text-white flex items-center gap-3">
+                        Nabiyyuna
+                    </h3>
+
+                    <a href="https://drive.google.com/file/d/1YYyRpvQtBvEPrDdvi0uM6MiNPhlN-6Mh/view?usp=sharing" class="group flex justify-between items-center rounded-xl px-5 py-4
+                                   bg-white dark:bg-zinc-900/60 border border-zinc-100 dark:border-zinc-800/80
+                                   hover:bg-indigo-500/10 dark:hover:bg-indigo-500/10 transition-all duration-300">
+
+                        <span class="font-medium text-zinc-800 dark:text-zinc-200">
+                            Nabiyyuna M1
+                        </span>
+
+                        <span class="text-indigo-400 group-hover:translate-x-1 transition">
+                            ↗
+                        </span>
+
+                    </a>
+
+                    <a href="https://drive.google.com/file/d/1JLHn0kKoqqZ0DQutyHJqtSymM_xP5sV9/view?usp=drive_link"
+                        class="group flex justify-between items-center rounded-xl px-5 py-4
+                                   bg-white dark:bg-zinc-900/60 border border-zinc-100 dark:border-zinc-800/80
+                                   hover:bg-indigo-500/10 dark:hover:bg-indigo-500/10 transition-all duration-300">
+
+                        <span class="font-medium text-zinc-800 dark:text-zinc-200">
+                            Nabiyyuna M2
+                        </span>
+
+                        <span class="text-indigo-400 group-hover:translate-x-1 transition">
+                            ↗
+                        </span>
+
+                    </a>
+
+                    <a href="https://drive.google.com/file/d/1DS4_s_KyH7ddnL3aheEB0TpVh4_fxTCk/view?usp=drive_link"
+                        class="group flex justify-between items-center rounded-xl px-5 py-4
+                                   bg-white dark:bg-zinc-900/60 border border-zinc-100 dark:border-zinc-800/80
+                                   hover:bg-indigo-500/10 dark:hover:bg-indigo-500/10 transition-all duration-300">
+
+                        <span class="font-medium text-zinc-800 dark:text-zinc-200">
+                            Nabiyyuna M3
+                        </span>
+
+                        <span class="text-indigo-400 group-hover:translate-x-1 transition">
+                            ↗
+                        </span>
+
+                    </a>
+
+                    <h3 class="text-2xl font-bold mb-6 mt-5 text-zinc-900 dark:text-white flex items-center gap-3">
+                        AL-QUR'AN
+                    </h3>
+
+
+                    <a href="https://drive.google.com/file/d/17StNirTo_2nqwKEKkzGM37wQiTdbv8XY/view?usp=drive_link"
+                        class="group flex justify-between items-center rounded-xl px-5 py-4
+                                   bg-white dark:bg-zinc-900/60 border border-zinc-100 dark:border-zinc-800/80
+                                   hover:bg-indigo-500/10 dark:hover:bg-indigo-500/10 transition-all duration-300">
+
+                        <span class="font-medium text-zinc-800 dark:text-zinc-200">
+                            Juz 29
+                        </span>
+
+                        <span class="text-indigo-400 group-hover:translate-x-1 transition">
+                            ↗
+                        </span>
+
+                    </a>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeBtn = document.getElementById('theme-toggle');
+            const glowBtn = document.getElementById('glow-toggle');
+            if (!themeBtn || !glowBtn) return;
+
+            function updateThemeButton() {
+                themeBtn.textContent = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
+            }
+
+            function updateGlowButton() {
+                if (document.body.classList.contains('glow-mode')) {
+                    glowBtn.textContent = '💡';
+                    glowBtn.classList.add('bg-indigo-500/20', 'text-indigo-400', 'border-indigo-500/30');
+                } else {
+                    glowBtn.textContent = '✨';
+                    glowBtn.classList.remove('bg-indigo-500/20', 'text-indigo-400', 'border-indigo-500/30');
+                }
+            }
+
+            function applyTheme(theme) {
+                if (theme === 'dark') {
+                    document.documentElement.classList.add('dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                }
+                localStorage.setItem('theme', theme);
+                updateThemeButton();
+            }
+
+            function applyGlow(enabled) {
+                document.body.classList.toggle('glow-mode', enabled);
+                localStorage.setItem('glow', enabled ? 'on' : 'off');
+                updateGlowButton();
+            }
+
+            themeBtn.addEventListener('click', () => {
+                const nextTheme = document.documentElement.classList.contains('dark') ? 'light' : 'dark';
+                applyTheme(nextTheme);
+            });
+
+            glowBtn.addEventListener('click', () => {
+                applyGlow(!document.body.classList.contains('glow-mode'));
+            });
+
+            const savedTheme = localStorage.getItem('theme');
+            const savedGlow = localStorage.getItem('glow') === 'on';
+
+            if (savedTheme === 'dark') {
+                document.documentElement.classList.add('dark');
+            } else if (savedTheme === 'light') {
+                document.documentElement.classList.remove('dark');
+            }
+
+            applyGlow(savedGlow);
+            updateThemeButton();
+            updateGlowButton();
+        });
+    </script>
+
+</body>
+
+</html>
