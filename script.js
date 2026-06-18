@@ -48,8 +48,8 @@ window.addEventListener('scroll', () => {
   if (window.scrollY > 30) {
 
     navWrapper.classList.add(
-      'bg-white/40',
-      'dark:bg-zinc-900/40',
+      'bg-white/20',
+      'dark:bg-zinc-900/30',
       'backdrop-blur-xl',
       'border',
       'border-white/20',
@@ -60,7 +60,7 @@ window.addEventListener('scroll', () => {
 
     navWrapper.classList.remove(
       'bg-white/20',
-      'dark:bg-zinc-900/20',
+      'dark:bg-zinc-900/30',
       'backdrop-blur 1xl',
       'border',
       'border-white/10',
